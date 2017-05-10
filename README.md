@@ -17,7 +17,12 @@ format
 
 install
 -------
+  Debian:
     sudo apt-get install postgresql-server-dev-9.4
+  Fedora:
+    sudo dnf install https://download.postgresql.org/pub/repos/yum/9.6/fedora/fedora-24-x86_64/pgdg-fedora96-9.6-3.noarch.rpm
+    sudo dnf install postgresql96-server postgresql96-contrib postgresql-devel
+
     make
     sudo cp decoding_json.so /usr/lib/postgresql/9.4/lib/
 
